@@ -2,6 +2,99 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+* {
+    margin:0;
+    padding:0;
+}
+
+*::selection{
+    background-color: black;
+    color:aqua;
+}
+
+input:focus{
+    outline:none;
+}
+
 body{
     background: linear-gradient(to right, rgba(0, 255, 255, 0.5), rgba(0, 255, 255, 0.5), lightblue);
+    display: flex;
+    padding:0;
 }
+
+#super-container{
+    width:100%;
+    height: 100%;
+    background-color:red;
+    display: grid;
+    grid-template-columns: 1fr 3fr repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    padding:20px 20px 0 0;
+    column-gap: 20px;
+}
+
+#super-container > aside{
+    grid-column: 1 /span 1;
+    grid-row : 1/ end;
+    background-color: bisque;
+}
+
+#super-container > nav{
+    border-radius:10px;
+    background-color: rgb(28, 0, 153);
+    grid-column: 2 / end;
+
+    display: flex;
+    justify-content: space-between;
+    padding:10px 35px;
+
+}
+
+nav > :first-child, nav > :last-child{
+    display: flex;
+    gap:15px;
+    color:white;
+}
+
+
+nav > :last-child > :last-child > img{
+    height: 100%;
+    width:50px;
+    border-radius: 50%;
+}
+
+nav > :last-child > :last-child {
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+
+nav > :last-child > :last-child > p > span{
+    display: block;
+    font-size:.7rem
+}
+
+nav > :last-child > :last-child > p{
+    font-size: .9rem;
+}
+
+nav svg{
+    height: 100%;
+    width:20px;
+}
+
+svg path{
+    fill:white;
+}
+
+nav > :last-child > *, nav > :first-child svg{
+    transition: .2s;
+    cursor: pointer;
+}
+
+nav > :last-child > :hover, nav > :first-child svg:hover{
+    transform: scale(1.3);
+}
+
+
