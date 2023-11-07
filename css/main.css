@@ -1,5 +1,5 @@
 aside{
-    background-color: red;
+    background-color: rgb(255, 158, 40);
     grid-area: 1 / 1 / end / 1 ;
     display: flex;;
     flex-direction: column;
