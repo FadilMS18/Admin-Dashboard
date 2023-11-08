@@ -1,0 +1,85 @@
+/* Content Before heading  
+    "•"
+*/
+
+#super-container > aside{
+    background-color: rgb(60, 0, 255);
+    display: grid;
+    grid-template : 70px / 1fr;
+    grid-auto-rows:350px;
+    padding:30px 10px;
+
+
+    position: fixed;
+    top:0;
+    left: 10px;
+
+    justify-items: center;
+    height: 100%;
+    min-width: 150px;
+
+    color: white;
+
+  
+    
+    box-shadow:1px 0 5px 1px rgba(0, 0, 0, .6)
+
+}
+
+
+aside > h1{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+aside > div > ul{
+    list-style-type: none;
+}
+
+aside > div > h3::before{
+    content: "•";
+    margin-right:10px
+}
+
+aside > div{
+    width: 100%;
+    /* background-color: red; */
+    place-self: start;
+    display: flex;
+    flex-direction: column;
+}
+
+aside > div > ul > li{
+    margin-top:15px;
+    padding:10px 15px; 
+    transition:.2s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+aside svg{
+    width: 25px;
+    height: 25px;
+}
+
+aside > div > ul > li:hover svg path{
+    fill:black;
+}
+
+
+aside > div > ul > li:hover{
+    transform: scale(1.1);
+    padding-left:25px;
+    background-color: white;
+    color: black;
+
+}
+
+aside > :last-child > h3{
+    font-size: 1.1rem;
+}
+

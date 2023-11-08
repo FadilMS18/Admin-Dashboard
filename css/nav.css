@@ -1,0 +1,68 @@
+#super-container > nav{
+    border-radius:10px;
+    background-color: rgb(28, 0, 153);
+    grid-column: 2 / end;
+
+    display: flex;
+    justify-content: space-between;
+    padding:10px 35px;
+
+    margin-top: 20px;
+    min-width: 500px;
+
+}
+
+nav > :first-child, nav > :last-child{
+    display: flex;
+    gap:15px;
+    color:white;
+}
+
+
+nav > :last-child > :last-child > img{
+    height: 100%;
+    width:50px;
+    border-radius: 50%;
+}
+
+nav > :last-child > :last-child {
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+
+nav > :last-child > :last-child > p > span{
+    display: block;
+    font-size:.7rem
+}
+
+nav > :last-child > :last-child > p{
+    font-size: .9rem;
+}
+
+nav svg{
+    height: 100%;
+    width:20px;
+}
+
+
+nav svg:hover path,
+nav > :last-child > :first-child:hover,
+nav > :last-child > :first-child:hover svg path{
+    color: aqua;
+    fill: aqua;
+}
+
+nav > :last-child > *, nav > :first-child svg{
+    transition: .2s;
+    cursor: pointer;
+}
+
+nav > :last-child > :hover, nav > :first-child svg:hover{
+    transform: scale(1.3);
+}
+
+nav > :last-child > :active,
+nav > :first-child svg:active{
+    transform: scale(1);
+}
