@@ -88,6 +88,13 @@ svg path{
     fill:white;
 }
 
+svg:hover path,
+nav > :last-child > :first-child:hover svg path,
+nav > :last-child > :first-child:hover{
+    color: aqua;
+    fill: aqua;
+}
+
 nav > :last-child > *, nav > :first-child svg{
     transition: .2s;
     cursor: pointer;
@@ -97,4 +104,8 @@ nav > :last-child > :hover, nav > :first-child svg:hover{
     transform: scale(1.3);
 }
 
+nav > :last-child > :active,
+nav > :first-child svg:active{
+    transform: scale(1);
+}
 
