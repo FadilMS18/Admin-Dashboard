@@ -1,7 +1,7 @@
 #main-container{
     /* background-color: white; */
     grid-column: 2 / end;
-    grid-row: 2 / span 3;
+    grid-row: 2 / span 2;
     padding:20px 30px ;
 
     display: flex;
@@ -89,4 +89,6 @@
 }
 #first-section-title::before, #first-section-title::after{
     content: "⭐✨🌟";
+    margin:0 5px;
 }
+

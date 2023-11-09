@@ -1,0 +1,43 @@
+#quote{
+    background-color: whitesmoke;
+    border-radius: 20px;;
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 2;
+    /* margin-top:30px; */
+    padding:0px 80px  ;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    max-height:400px;
+    justify-content: center;
+    box-shadow: 0px 0px 15px -2px rgba(255, 255, 255, .7), inset 0px 0px 15px 1px rgba(28, 0, 153, .3);;
+    
+}
+
+#quote > h3{
+    margin-top:-20px;
+    font-size: 2rem;
+}
+
+#quote > p{
+    font-size: 3rem;
+    font-weight: bolder;
+    text-indent: 2rem;
+    line-height: 5rem;
+    font-style: italic;
+}
+
+#quote > h5{
+    text-align: end;
+    font-size: 2rem;
+    font-style: italic;
+    text-indent: 1rem;
+}
+
+#quote > h5::before, #quote > h5::after{
+    content: "⚡";
+}
+
+
+
+/* 📌 */
