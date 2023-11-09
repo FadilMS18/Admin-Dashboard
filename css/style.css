@@ -18,6 +18,17 @@
     color:aqua;
 }
 
+a:link{
+    font-style: none;
+    text-decoration: none;
+}
+a:visited{
+    font-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+
 input:focus{
     outline:none;
 }
@@ -27,7 +38,8 @@ body{
     display: flex;
     padding:0;
     /* background: rgb(55, 0, 172); */
-    background-color: rgb(0, 0, 100);
+    /* background-color: rgb(0, 0, 100); */
+    background: linear-gradient(to right bottom, rgb(104, 0, 104), black, rgb(0, 0, 100));
     background-size: cover;
 }
 
@@ -37,8 +49,8 @@ body{
     /* background-color:white; */
     display: grid;
     grid-template-columns: 12% 3fr repeat(3, 1fr);
-    grid-template-rows: 80px 50% 50% ;
-    grid-auto-rows: 50%;
+    grid-template-rows: 80px 300px  ;
+    grid-auto-rows: 300px;
 
     padding:0px 20px 0 0;
     column-gap: 30px;
