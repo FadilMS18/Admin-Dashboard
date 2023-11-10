@@ -20,15 +20,12 @@
 
 
 
-#main-container > :last-child{
-    background: url(./../assets/Ninja\ rain.gif) right no-repeat;
-    background-size: cover;
-    
-}
 
 #main-container > :first-child{
     display: grid;
     background-color: rgba(255, 255, 255, .8);
+
+    max-width:650px;
 
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-auto-rows:200px;
@@ -47,6 +44,7 @@
     transition: .2s;
     cursor: pointer;
     position: relative;
+
 
     overflow: hidden;
 }
@@ -92,3 +90,84 @@
     margin:0 5px;
 }
 
+/* pixel ninja song */
+
+#main-container > .hover:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px -1px rgba(255, 255, 255);
+}
+
+#main-container > .fixed > :first-child{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px 0 0 5px;
+
+    position: absolute;
+    top:10px;
+    right:0px;
+
+    cursor: pointer;
+    transition: .2s;
+}
+
+#main-container > :last-child > :first-child:hover{
+    transform: scale(1.2);
+    top:2px;
+    right:2px;
+}
+
+#main-container > .fixed{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    min-height: 100vh;
+    z-index: 999;
+
+    
+}
+
+#main-container > :last-child > .display-none{
+    display: none;
+    opacity: 0;
+}
+
+
+#main-container > :last-child{
+    background: url(./../assets/Ninja\ rain.gif) right no-repeat ;
+    background-size: cover;
+    
+
+    transition: .4s;
+    cursor: pointer;
+    
+    
+}
+
+#placeholder{
+    opacity:0;
+    position: absolute;
+    bottom: 20px;
+    left:50px;
+    right:50px;
+    border-radius: 10px;;
+
+    padding:10px;
+    text-align: center;
+
+    background-color: rgb(255, 255, 255, .6) ;
+    font-size: 2rem;
+
+    transition: .5s;
+}
+
+#main-container > :last-child:hover > :last-child{
+    
+    opacity: 1;
+
+
+}

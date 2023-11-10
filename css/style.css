@@ -1,5 +1,6 @@
 :root{
     font-family:text-me, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
 }
 
 @font-face {
@@ -34,13 +35,14 @@ input:focus{
 }
 
 body{
-    /* background: linear-gradient(to right, rgba(0, 255, 255, 0.5), rgba(0, 255, 255, 0.5), lightblue); */
     display: flex;
     padding:0;
     /* background: rgb(55, 0, 172); */
     /* background-color: rgb(0, 0, 100); */
     background: linear-gradient(to right bottom, rgb(104, 0, 104), black, rgb(0, 0, 100));
     background-size: cover;
+
+
 }
 
 #super-container{
