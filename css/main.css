@@ -138,11 +138,11 @@
 
 
 #main-container > :last-child{
-    background: url(./../assets/Ninja\ rain.gif) right no-repeat ;
+    /* background: url(./../assets/Ninja\ rain.gif) right no-repeat ; */
     background-size: cover;
     
 
-    transition: .4s;
+    transition: .7s;
     cursor: pointer;
     
     

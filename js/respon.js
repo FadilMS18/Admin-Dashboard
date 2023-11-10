@@ -5,8 +5,23 @@ const body = document.querySelector("body")
 const placeholder = document.querySelector(`#main-container > :last-child > #placeholder`)
 
 const vidMusic = document.querySelector(`#main-container > :last-child > audio`)
+let index = 0
 
 console.log(closeVid)
+const warna = ["blue", "red", "green"]
+
+
+window.addEventListener("DOMContentLoaded", randomBG)
+
+function randomBG(){
+    let random = Math.floor(Math.random() * 6 )
+    picVid.style.background = `url(./../assets/gif/gif-bg${random}.gif)`
+    picVid.style.backgroundSize = "cover"
+    index = (index + 1) % 6
+    setTimeout(randomBG, 5000)
+}
+
+
 
 
 
