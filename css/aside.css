@@ -3,7 +3,7 @@
 */
 
 #super-container > aside{
-    background-color: rgb(60, 0, 255);
+    background-color: var(--secondary);
     display: grid;
     grid-template : 70px / 1fr;
     grid-auto-rows:350px;
@@ -18,7 +18,7 @@
     height: 100%;
     min-width: 150px;
 
-    color: white;
+    color: var(--fontColor);
 
   
     
@@ -43,7 +43,7 @@ aside > div > h3::before{
 
 aside > div{
     width: 100%;
-    /* background-color: red; */
+    
     place-self: start;
     display: flex;
     flex-direction: column;
@@ -74,9 +74,11 @@ aside > div > ul > li:hover svg path{
 aside > div > ul > li:hover{
     transform: scale(1.1);
     padding-left:25px;
-    background-color: white;
-    color: black;
+    background-color: var(--support1);
+}
 
+aside > div > h3 + ul > li:hover{
+    color:var(--secondary)
 }
 
 aside > :last-child > h3{

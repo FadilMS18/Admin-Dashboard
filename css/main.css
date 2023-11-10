@@ -23,7 +23,7 @@
 
 #main-container > :first-child{
     display: grid;
-    background-color: rgba(255, 255, 255, .8);
+    background-color: var(--secondary);
 
     max-width:650px;
 
@@ -37,8 +37,8 @@
 }
 
 #main-container > :first-child > div{
-    background: url(./../assets/Cat-pic1.jpg) ;
-    background-size: contain ;
+    background: url(./../assets/Cat-pic1.jpg)  center no-repeat;
+    background-size: cover ;
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .2);
     border-radius: 5px;
     transition: .2s;
@@ -61,8 +61,8 @@
 
 #main-container > :first-child >div > header{
     position: absolute;
-    color:black;
-    background-color: rgba(255, 235, 205, .7);
+    color:var(--fontColor);
+    background-color: rgba(168, 161, 247, .5);
     bottom:0;
     left:0;
     right:0;
@@ -72,10 +72,16 @@
 
 #main-container >:first-child  h6{
     font-size: 1rem;
+    color: var(--secondary);
 }
-#main-container > :first-child span{
-    font-size:.85rem
+#main-container > :first-child  span{
+    font-size:.85rem;
+    color:var(--secondary)  
 }
+#main-container > :first-child > span{
+    color: var(--fontColor);
+}
+
 
 #first-section-title{
     position: absolute;
@@ -102,7 +108,7 @@
     justify-content: center;
     align-items:center;
     
-    background-color: white;
+    background-color: var(--secondary);
     padding: 15px;
     border-radius: 5px 0 0 5px;
 
@@ -159,7 +165,8 @@
     padding:10px;
     text-align: center;
 
-    background-color: rgb(255, 255, 255, .6) ;
+    background-color:hsla(245, 86%, 80%, .85) ;
+    color: var(--secondary);
     font-size: 2rem;
 
     transition: .5s;

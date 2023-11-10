@@ -1,6 +1,12 @@
 :root{
     font-family:text-me, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: black;
+
+    --primary : #272b4a;
+    --secondary : #0f143c;
+    --support1 : #a8a1f8;
+    --support2 :#8e94b7;
+    --fontColor : #ced6e7; 
 }
 
 @font-face {
@@ -12,6 +18,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    color: var(--fontColor);
 }
 
 *::selection{
@@ -26,7 +33,7 @@ a:link{
 a:visited{
     font-style: none;
     text-decoration: none;
-    color: white;
+    color: var(--fontColor);
 }
 
 
@@ -39,7 +46,8 @@ body{
     padding:0;
     /* background: rgb(55, 0, 172); */
     /* background-color: rgb(0, 0, 100); */
-    background: linear-gradient(to right bottom, rgb(104, 0, 104), black, rgb(0, 0, 100));
+    /* background: linear-gradient(to right bottom, rgb(104, 0, 104), black, rgb(0, 0, 100)); */
+    background-color: #272b4a;
     background-size: cover;
 
 
@@ -48,7 +56,7 @@ body{
 #super-container{
     width:100%;
     height: 100%;
-    /* background-color:white; */
+    /* background-color:rgba(255, 255, 255, .2); */
     display: grid;
     grid-template-columns: 12% 3fr repeat(3, 1fr);
     grid-template-rows: 80px 300px  ;
@@ -62,7 +70,7 @@ body{
 }
 
 svg path{
-    fill:white;
+    fill:var(--fontColor);
 }
 
 

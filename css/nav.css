@@ -1,6 +1,6 @@
 #super-container > nav{
     border-radius:10px;
-    background-color: rgb(28, 0, 153);
+    background-color: var(--secondary);
     grid-column: 2 / end;
 
     display: flex;
@@ -15,7 +15,7 @@
 nav > :first-child, nav > :last-child{
     display: flex;
     gap:15px;
-    color:white;
+    color:var(--fontColor);
 }
 
 
@@ -49,8 +49,8 @@ nav svg{
 nav svg:hover path,
 nav > :last-child > :first-child:hover,
 nav > :last-child > :first-child:hover svg path{
-    color: aqua;
-    fill: aqua;
+    color: var(--support1);
+    fill: var(--support1);
 }
 
 nav > :last-child > *, nav > :first-child svg{
