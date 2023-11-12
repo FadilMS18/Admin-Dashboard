@@ -54,10 +54,7 @@
 
 }
 
-#main-container > :first-child > :nth-child(2){
-    background: url(./../assets/Mountain-by-Nikita-Krassiouk.jpg) center;
-    background-size: cover;
-}
+
 
 #main-container > :first-child >div > header{
     position: absolute;
@@ -76,7 +73,7 @@
 }
 #main-container > :first-child  span{
     font-size:.85rem;
-    color:var(--secondary)  
+    color:var(--fontColor)  
 }
 #main-container > :first-child > span{
     color: var(--fontColor);
